@@ -1,11 +1,11 @@
-<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Nolann Tibi — Portfolio Créatif &amp; CV | ESMOD Paris · Mode, Projets Web &amp; Événementiel</title><style>
+<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Nolann Tibi — Portfolio Complet (Mode ESMOD, 8 Web Apps en Ligne &amp; Événementiel)</title><style>
         :root {
-            --bg: #08090c;
-            --surface: #12141c;
-            --surface-2: #181b26;
-            --border: #262a3b;
+            --bg: #07080c;
+            --surface: #11131c;
+            --surface-2: #171a26;
+            --border: #252a3d;
             --gold: #d4af37;
-            --orange: #ea580c;
+            --green: #10b981;
             --text: #f8fafc;
             --muted: #94a3b8;
         }
@@ -17,11 +17,7 @@
             color: var(--text);
             line-height: 1.6;
         }
-        .container {
-            max-width: 1080px;
-            margin: 0 auto;
-            padding: 36px 24px 90px;
-        }
+        .container { max-width: 1120px; margin: 0 auto; padding: 36px 24px 90px; }
         .nav {
             display: flex;
             justify-content: space-between;
@@ -32,13 +28,7 @@
             flex-wrap: wrap;
             gap: 14px;
         }
-        .brand {
-            font-size: 21px;
-            font-weight: 900;
-            letter-spacing: 2.5px;
-            text-transform: uppercase;
-            color: #fff;
-        }
+        .brand { font-size: 21px; font-weight: 900; letter-spacing: 2.5px; text-transform: uppercase; color: #fff; }
         .brand span { color: var(--gold); }
         .nav-links { display: flex; gap: 10px; flex-wrap: wrap; }
         .btn {
@@ -86,21 +76,8 @@
             border-radius: 16px;
             padding: 22px;
         }
-        .quick-facts h3 {
-            margin: 0 0 12px 0;
-            font-size: 13px;
-            text-transform: uppercase;
-            letter-spacing: 1.2px;
-            color: var(--gold);
-        }
-        .fact-row {
-            display: flex;
-            justify-content: space-between;
-            padding: 8px 0;
-            border-bottom: 1px solid #1e2230;
-            font-size: 13.5px;
-            gap: 10px;
-        }
+        .quick-facts h3 { margin: 0 0 12px 0; font-size: 13px; text-transform: uppercase; letter-spacing: 1.2px; color: var(--gold); }
+        .fact-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #1e2230; font-size: 13.5px; gap: 10px; }
         .fact-row:last-child { border-bottom: none; }
         .fact-label { color: var(--muted); }
         .fact-val { font-weight: 600; color: #fff; text-align: right; }
@@ -119,7 +96,7 @@
         }
         .section-sub { font-size: 13px; color: var(--gold); font-weight: 600; }
         .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(440px, 1fr)); gap: 20px; }
-        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; }
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 18px; }
         @media (max-width: 600px) { .grid-2 { grid-template-columns: 1fr; } }
 
         .card {
@@ -131,21 +108,14 @@
             flex-direction: column;
             gap: 10px;
         }
-        .card-highlight {
-            border-color: rgba(212, 175, 55, 0.45);
-            background: linear-gradient(160deg, #12141c 0%, #191724 100%);
-        }
+        .card-highlight { border-color: rgba(212, 175, 55, 0.45); background: linear-gradient(160deg, #11131c 0%, #191724 100%); }
         .card h4 { margin: 0; font-size: 18px; color: #fff; }
-        .card .sub { color: var(--gold); font-size: 12.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px; }
+        .card .sub { color: var(--gold); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px; }
         .card p, .card ul { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.55; }
         .card ul { padding-left: 18px; }
+        .live-dot { display: inline-block; width: 8px; height: 8px; background: var(--green); border-radius: 50%; margin-right: 6px; }
 
-        .palette-bar {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-            margin-top: 8px;
-        }
+        .palette-bar { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; margin-top: 8px; }
         .swatch {
             border-radius: 8px;
             padding: 10px 8px;
@@ -156,79 +126,115 @@
             border: 1px solid rgba(255,255,255,0.12);
         }
         .kw-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
-        .kw {
-            background: var(--surface-2);
-            border: 1px solid var(--border);
-            color: #cbd5e1;
-            padding: 4px 10px;
-            border-radius: 6px;
-            font-size: 11.5px;
-            font-weight: 600;
-        }
-        footer {
-            margin-top: 68px;
-            padding-top: 24px;
-            border-top: 1px solid var(--border);
-            text-align: center;
-            color: var(--muted);
-            font-size: 13px;
-        }
+        .kw { background: var(--surface-2); border: 1px solid var(--border); color: #cbd5e1; padding: 4px 10px; border-radius: 6px; font-size: 11.5px; font-weight: 600; }
+        footer { margin-top: 68px; padding-top: 24px; border-top: 1px solid var(--border); text-align: center; color: var(--muted); font-size: 13px; }
     </style></head><body>
     <div class="container">
         <nav class="nav">
             <div class="brand">NOLANN <span>TIBI</span></div>
             <div class="nav-links">
-                <a class="btn btn-outline" href="#projets-esmod">🎨 Projets ESMOD</a>
-                <a class="btn btn-outline" href="#projets-web">💻 Réalisations Web</a>
-                <a class="btn btn-outline" href="#experiences">💼 Expériences</a>
+                <a class="btn btn-outline" href="#projets-esmod">🎨 Mode &amp; ESMOD</a>
+                <a class="btn btn-outline" href="#ecosysteme-web">🚀 9 Sites &amp; Apps Créés</a>
+                <a class="btn btn-outline" href="#experiences">🥂 Événementiel &amp; Terrain</a>
                 <a class="btn btn-gold" href="mailto:nolanntibi@gmail.com">✉️ Me contacter</a>
             </div>
         </nav>
 
         <section class="hero">
             <div>
-                <span class="tag">ESMOD Paris (Bachelor Fashion Design · SM16) · Événementiel &amp; Création</span>
+                <span class="tag">ESMOD Paris (Bachelor Fashion Design · SM16) · Créateur Web &amp; Événementiel</span>
                 <h1>Nolann Tibi</h1>
                 <p class="lead">
                     Étudiant de 18 ans en 1re année de <strong>Bachelor Fashion Design à ESMOD Paris</strong> (Paris 9e &amp; Pantin), résidant à <strong>Charenton-le-Pont (à 10 min de Bercy / Accor Arena)</strong>.
-                    Passionné par le volume, la direction artistique, l'architecture urbaine et le numérique, je combine une formation créative exigeante avec une vraie rigueur opérationnelle en <strong>accueil événementiel, showrooms, logistique et création web</strong>.
+                    À la croisée du vêtement, du volume, de la direction artistique et du développement d'applications web (<strong>9 sites et applications déployés en production</strong>), j'apporte rigueur, ponctualité et présentation soignée en <strong>accueil événementiel, showrooms, logistique et création digitale</strong>.
                 </p>
-                <div style="display:flex;gap:12px;flex-wrap:wrap;">
+                <div style="display:flex;gap:10px;flex-wrap:wrap;">
                     <a class="btn btn-gold" href="mailto:nolanntibi@gmail.com">📧 nolanntibi@gmail.com</a>
                     <a class="btn btn-outline" href="tel:+33602724020">📞 06 02 72 40 20</a>
-                    <a class="btn btn-outline" href="https://periph-en-vif.surge.sh/" target="_blank">🚇 Voir « Périph en vif »</a>
-                    <a class="btn btn-outline" href="https://oevi.art" target="_blank">🌐 Voir OEVI.art</a>
+                    <a class="btn btn-outline" href="https://nolann-studio-site.web.app" target="_blank">✨ Nolann Studio</a>
+                    <a class="btn btn-outline" href="https://oevi.art" target="_blank">🎨 OEVI.art</a>
+                    <a class="btn btn-outline" href="https://periph-en-vif.surge.sh/" target="_blank">🚇 Périph en vif</a>
                 </div>
             </div>
 
             <div class="quick-facts">
-                <h3>Fiche d'Identité &amp; Disponibilités</h3>
-                <div class="fact-row">
-                    <span class="fact-label">Localisation</span>
-                    <span class="fact-val">Charenton-le-Pont (94220) · Paris</span>
-                </div>
-                <div class="fact-row">
-                    <span class="fact-label">Accès Direct</span>
-                    <span class="fact-val">Bercy (10 min) · Lignes 8 &amp; 14</span>
-                </div>
-                <div class="fact-row">
-                    <span class="fact-label">Formation actuelle</span>
-                    <span class="fact-val">ESMOD Paris · Bachelor Fashion Design</span>
-                </div>
-                <div class="fact-row">
-                    <span class="fact-label">Disponibilités Missions</span>
-                    <span class="fact-val">Samedis, Dimanches &amp; Soirées ponctuelles</span>
-                </div>
-                <div class="fact-row">
-                    <span class="fact-label">Langues</span>
-                    <span class="fact-val">Français (Natif) · Anglais (B1/B2) · Espagnol (B1)</span>
-                </div>
-                <div class="fact-row">
-                    <span class="fact-label">Profil Physique &amp; Sport</span>
-                    <span class="fact-val">18 ans · 1m78 · Athlétisme, Course &amp; Volley</span>
-                </div>
+                <h3>Fiche Profil &amp; Disponibilités</h3>
+                <div class="fact-row"><span class="fact-label">Localisation</span><span class="fact-val">Charenton-le-Pont (94220) · Paris</span></div>
+                <div class="fact-row"><span class="fact-label">Accès Direct</span><span class="fact-val">Bercy (10 min) · Lignes 8 &amp; 14</span></div>
+                <div class="fact-row"><span class="fact-label">École</span><span class="fact-val">ESMOD Paris · Bachelor Fashion Design</span></div>
+                <div class="fact-row"><span class="fact-label">Disponibilités</span><span class="fact-val">Samedis, Dimanches &amp; Soirées ponctuelles</span></div>
+                <div class="fact-row"><span class="fact-label">Langues</span><span class="fact-val">Français (Natif) · Anglais (B1/B2) · Espagnol (B1)</span></div>
+                <div class="fact-row"><span class="fact-label">Profil &amp; Sport</span><span class="fact-val">18 ans · 1m78 · Athlétisme, Course &amp; Volley</span></div>
             </div>
         </section>
+
+        <h2 class="section-title" id="ecosysteme-web">
+            <span>🚀 Écosystème Digital — 9 Sites Web &amp; Applications Déployés en Production</span>
+            <span class="section-sub">React · TypeScript · Firebase · PHP · Direction Artistique</span>
+        </h2>
+        <div class="grid-3">
+            <div class="card card-highlight">
+                <div class="sub"><span class="live-dot"></span>En ligne · Studio de Création Web</div>
+                <h4>✨ NOLANN STUDIO</h4>
+                <p>Studio de création de sites vitrines sur mesure pour indépendants, artisans et petites entreprises, avec système de demande de devis interactif (<code>/devis</code>) et back-office CRM.</p>
+                <div style="margin-top:auto;padding-top:10px;display:flex;gap:8px;flex-wrap:wrap;">
+                    <a class="btn btn-gold" href="https://nolann-studio-site.web.app" target="_blank">🔗 nolann-studio-site.web.app</a>
+                    <a class="btn btn-outline" href="https://nolann-studio-site.web.app/devis" target="_blank">📝 Devis</a>
+                </div>
+            </div>
+
+            <div class="card card-highlight">
+                <div class="sub"><span class="live-dot"></span>En ligne · Démonstration Vitrine Artisanat</div>
+                <h4>🪑 Atelier Rivière (Démo Nolann Studio)</h4>
+                <p>Site vitrine complet réalisé pour illustrer le savoir-faire d'un atelier d'ébénisterie sur mesure (direction typographique Fraunces &amp; Playfair Display, galerie et administration).</p>
+                <div style="margin-top:auto;padding-top:10px;">
+                    <a class="btn btn-outline" href="https://nolann-vitrine-demo.web.app" target="_blank">🔗 nolann-vitrine-demo.web.app</a>
+                </div>
+            </div>
+
+            <div class="card card-highlight">
+                <div class="sub"><span class="live-dot"></span>En ligne · Plateforme Créative</div>
+                <h4>🎨 OEVI — Artist Career OS (oevi.art)</h4>
+                <p>Plateforme pensée pour accompagner les artistes dans le suivi de leurs œuvres de l'idée à la vente (« 0 % commission OEVI »), hébergée sur OVH avec liste d'attente double opt-in Resend.</p>
+                <div style="margin-top:auto;padding-top:10px;">
+                    <a class="btn btn-outline" href="https://oevi.art" target="_blank">🔗 https://oevi.art</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="sub"><span class="live-dot"></span>En ligne · Application Mode</div>
+                <h4>📐 ESMOD Studio App</h4>
+                <p>Application web React/Firebase de suivi de projets créatifs structurée selon les 4 phases du processus de création mode (<em>Recherche → Concept → Prototype → Final</em>) avec fiches imprimables.</p>
+                <div style="margin-top:auto;padding-top:10px;">
+                    <a class="btn btn-outline" href="https://esmod-studio-nolann.web.app" target="_blank">🔗 esmod-studio-nolann.web.app</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="sub"><span class="live-dot"></span>En ligne · Bibliothèque Visuelle Cloud</div>
+                <h4>🗂️ Nolann Archives</h4>
+                <p>Application de curation et d'archivage visuel synchronisée dans le cloud (Firestore) reliant références artistiques, travaux personnels, projets et connexions thématiques.</p>
+                <div style="margin-top:auto;padding-top:10px;">
+                    <a class="btn btn-outline" href="https://nolann-archive-d40f8.web.app" target="_blank">🔗 nolann-archive-d40f8.web.app</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="sub"><span class="live-dot"></span>En ligne · Productivité &amp; Apprentissage</div>
+                <h4>⏱️ Focus Sprints &amp; Nolann Learning</h4>
+                <p>Deux applications web dédiées à l'organisation par sprints chronométrés (<em>Focus Sprints</em>) et à la prise de notes mobile rapide (<em>Nolann Learning</em>).</p>
+                <div style="margin-top:auto;padding-top:10px;display:flex;gap:8px;flex-wrap:wrap;">
+                    <a class="btn btn-outline" href="https://focus-sprints-nolann.web.app" target="_blank">🔗 Focus Sprints</a>
+                    <a class="btn btn-outline" href="https://nolann-learning.web.app" target="_blank">🔗 Learning</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="sub">Full-Stack B2B · 53 Tests E2E</div>
+                <h4>🦷 Dental Pacific — E-Commerce B2B Orthodontie</h4>
+                <p>Développement d'une plateforme e-commerce B2B complète pour instruments d'orthodontie : catalogue, stocks temps réel, panier serveur, facturation PDF et 3 espaces (Cabinet, Équipe, Direction).</p>
+            </div>
+        </div>
 
         <h2 class="section-title" id="projets-esmod">
             <span>🎨 Projets Créatifs &amp; Recherches — ESMOD Paris (2026–2027)</span>
@@ -236,11 +242,11 @@
         </h2>
         <div class="grid-2">
             <div class="card card-highlight">
-                <div class="sub">Projet Couleurs &amp; Direction Web · Novembre 2026</div>
+                <div class="sub"><span class="live-dot"></span>Projet Couleurs &amp; Direction Web · Novembre 2026</div>
                 <h4>🚇 « Périph en vif » — Les banlieues de Paris racontées par leurs couleurs</h4>
                 <p>
-                    Recherche visuelle et chromatique (avec Nérimène, Nyla et Kim) explorant l'architecture de la périphérie parisienne à travers le cinéma (<em>La Haine</em>) et l'esthétique des clips de rap français. 
-                    Conception et développement intégral du site interactif ordonnant <strong>9 couleurs originales de la nuit vers la lumière</strong> autour d'un plan de métro interactif.
+                    Recherche visuelle et chromatique (avec Nérimène, Nyla et Kim) explorant l'architecture de la périphérie parisienne à travers le cinéma (<em>La Haine</em>) et les clips de rap français. 
+                    Conception et développement du site interactif ordonnant <strong>9 couleurs originales de la nuit vers la lumière</strong> autour d'un plan de métro interactif.
                 </p>
                 <div class="palette-bar">
                     <div class="swatch" style="background:#1D3141;">Bitume Nocturne#1D3141</div>
@@ -260,73 +266,40 @@
                 <h4>🪂 Structure Volume « Parachute » — Membrane &amp; Suspension</h4>
                 <p>
                     Conception et réalisation d'une <strong>structure tridimensionnelle démontable sur mannequin</strong> inspirée du déploiement d'un parachute et de sa relation directe avec l'air. 
-                    Travail d'amplification des forces autour du corps par lignes sous tension, armatures en fil de fer, drap de coton, papier froissé et suspentes.
+                    Amplification des forces autour du corps par lignes sous tension, armatures en fil de fer, drap de coton, papier froissé et suspentes.
                 </p>
                 <div class="kw-list">
-                    <span class="kw">Souffle</span>
-                    <span class="kw">Expansion</span>
-                    <span class="kw">Suspension</span>
-                    <span class="kw">Tension</span>
-                    <span class="kw">Déploiement</span>
-                    <span class="kw">Membrane</span>
-                    <span class="kw">Structure démontable</span>
+                    <span class="kw">Souffle</span><span class="kw">Expansion</span><span class="kw">Suspension</span>
+                    <span class="kw">Tension</span><span class="kw">Déploiement</span><span class="kw">Membrane</span>
                 </div>
             </div>
 
             <div class="card">
                 <div class="sub">Direction Artistique &amp; Recherche · Octobre 2026</div>
                 <h4>📓 Blackbook ADN — Street Art, Psychodrama &amp; Andy Warhol</h4>
-                <p>
-                    Dossier de recherche plastique et culturelle structuré en 5 axes :
-                </p>
                 <ul>
-                    <li><strong>Vêtement ADN — Street Art :</strong> L'espace urbain transformé en support d'expression libre (*Downtown 81*).</li>
+                    <li><strong>Vêtement ADN — Street Art :</strong> L'espace urbain transformé en support d'expression libre (<em>Downtown 81</em>).</li>
                     <li><strong>Engagement Majeur — Parjures :</strong> Narration textile et structurelle.</li>
                     <li><strong>Couleur Identitaire — Orange saturé :</strong> Contraste sur bases sombres et matières brutes.</li>
-                    <li><strong>Thème Libre — <em>Psychodrama</em> (Dave) :</strong> Traduction visuelle et scénographique d'une œuvre musicale.</li>
+                    <li><strong>Thème Libre — <em>Psychodrama</em> (Dave) :</strong> Traduction visuelle d'une œuvre musicale.</li>
                     <li><strong>Journal d'exposition :</strong> <em>Andy Warhol, La Ligne et l'Image</em> (Musée du Luxembourg).</li>
                 </ul>
             </div>
 
             <div class="card">
-                <div class="sub">Textile, RSE &amp; Concours · Semestre 1 (2026)</div>
-                <h4>🧵 Collection Textile, Paris Fashion Week &amp; Concours Faber-Castell</h4>
+                <div class="sub">Textile, RSE &amp; Capsules · 2026</div>
+                <h4>🧵 Collection Textile, Fashion Week, Faber-Castell &amp; Capsules</h4>
                 <ul>
-                    <li><strong>Collection Création Textile &amp; RSE :</strong> Recherches matières, manipulations textiles (smocks, tissages), planche tendance et réalisation de 5 maquettes.</li>
-                    <li><strong>Dossier Paris Fashion Week :</strong> Analyse visuelle et éditoriale de défilés (8 planches).</li>
-                    <li><strong>Concours Figure de Mode Faber-Castell (Oct. 2026) :</strong> Création d'une silhouette de mode à partir d'une gamme chromatique de 5 couleurs extraite d'une photographie.</li>
+                    <li><strong>Collection Création Textile &amp; RSE :</strong> Manipulations textiles (smocks, tissages), planche tendance et réalisation de 5 maquettes.</li>
+                    <li><strong>Dossier Paris Fashion Week &amp; Concours Faber-Castell :</strong> Silhouette de mode créée à partir d'une gamme chromatique de 5 couleurs.</li>
+                    <li><strong>Capsules Visuelles :</strong> <em>La Peace — Capsule 01</em> &amp; <em>Lapis Club Design Strategy</em>.</li>
                 </ul>
             </div>
         </div>
 
-        <h2 class="section-title" id="projets-web">
-            <span>💻 Projets Numériques &amp; Création de Sites Web</span>
-            <span class="section-sub">Conception · Design d'interface · Déploiement</span>
-        </h2>
-        <div class="grid-3">
-            <div class="card">
-                <div class="sub">Plateforme Créative · En ligne</div>
-                <h4>🌐 OEVI (oevi.art)</h4>
-                <p>Conception, direction visuelle et déploiement complet de la landing page d'<strong>OEVI</strong> (« Artist Career OS » destiné au suivi des œuvres de l'idée à la présentation), avec système de liste d'attente double opt-in sécurisé.</p>
-                <div style="margin-top:auto;padding-top:10px;">
-                    <a class="btn btn-outline" href="https://oevi.art" target="_blank">🔗 https://oevi.art</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="sub">Projet Web Entreprise · 2025</div>
-                <h4>🦷 Site Web Dental Pacific</h4>
-                <p>Réalisation et refonte du site vitrine et catalogue de l'entreprise <strong>Dental Pacific</strong> en complément de ma mission terrain en logistique et gestion des stocks.</p>
-            </div>
-            <div class="card">
-                <div class="sub">Identité &amp; Capsules Visuelles</div>
-                <h4>🎬 La Peace Capsule &amp; Lapis Club</h4>
-                <p>Création de supports visuels, présentations de capsules streetwear (<em>La Peace — Capsule 01</em>, <em>Lapis Club Design Strategy</em>) et montage vidéo court format.</p>
-            </div>
-        </div>
-
         <h2 class="section-title" id="experiences">
-            <span>🥂 Missions Événementiel, Accueil, Showrooms &amp; Expériences Terrain</span>
-            <span class="section-sub">Disponible Samedis, Dimanches &amp; Soirées</span>
+            <span>🥂 Expériences Professionnelles &amp; Terrain</span>
+            <span class="section-sub">Accueil · Événementiel · Showrooms · Logistique</span>
         </h2>
         <div class="grid-3">
             <div class="card">
@@ -334,7 +307,7 @@
                 <div class="sub">Dental Pacific · Juillet 2025</div>
                 <ul>
                     <li>Préparation, vérification et emballage des commandes.</li>
-                    <li>Organisation rigoureuse des stocks et préparation des expéditions.</li>
+                    <li>Organisation des stocks et préparation des expéditions.</li>
                     <li>Réponse aux appels téléphoniques et transmission des demandes.</li>
                 </ul>
             </div>
@@ -343,31 +316,15 @@
                 <div class="sub">Cabinet de Rééducation · Mars 2026</div>
                 <ul>
                     <li>Accueil physique et installation des patients.</li>
-                    <li>Préparation du matériel et observation des séances.</li>
-                    <li>Maintien d'un espace de travail propre et organisé.</li>
+                    <li>Préparation du matériel et maintien d'un espace organisé.</li>
                 </ul>
             </div>
             <div class="card">
                 <h4>Garde d'Enfant à Domicile</h4>
                 <div class="sub">Particulier Employeur · Mission d'1 mois</div>
                 <ul>
-                    <li>Garde quotidienne d'une enfant de 2 ans.</li>
-                    <li>Préparation des repas, activités adaptées, sécurité et respect des routines.</li>
+                    <li>Garde quotidienne d'une enfant de 2 ans, repas, activités et sécurité.</li>
                 </ul>
-            </div>
-        </div>
-
-        <h2 class="section-title">🎓 Parcours Académique &amp; Compétences</h2>
-        <div class="grid-2">
-            <div class="card">
-                <h4>ESMOD Paris — Bachelor Fashion Design (2026 – 2029)</h4>
-                <div class="sub">Styliste Designer Mode · 1re Année (Classe SM16)</div>
-                <p>Stylisme, modélisme, atelier volume, création textile &amp; RSE, culture mode, Adobe Illustrator et narration visuelle. 100 % des rendus remis à l'heure.</p>
-            </div>
-            <div class="card">
-                <h4>Baccalauréat Général — Mention Assez Bien (2025)</h4>
-                <div class="sub">Lycée Robert Schuman (Charenton-le-Pont)</div>
-                <p>Spécialités Physique-Chimie et SVT. Points forts au contrôle continu : <strong>EPS (18/20)</strong>, <strong>Espagnol (17/20)</strong>, <strong>Anglais (14,7 à 16,2/20)</strong>. 1er quadrimestre 2025–2026 en kinésithérapie (HELHa Belgique, vie en autonomie complète) avant réorientation choisie vers ESMOD Paris.</p>
             </div>
         </div>
 
